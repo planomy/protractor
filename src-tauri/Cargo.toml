@@ -1,0 +1,13 @@
+[package]
+name = "floating-protractor"
+version = "0.2.0"
+description = "Always-on-top classroom angle measuring overlay"
+authors = ["Classroom tools"]
+edition = "2021"
+[lib]
+name = "floating_protractor_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+[dependencies]
+tauri = { version = "2", features = [] }
